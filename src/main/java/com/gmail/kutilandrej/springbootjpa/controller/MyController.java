@@ -41,6 +41,7 @@ public class MyController {
   @PostMapping("/employees")
   public Human addHuman(@RequestBody Human human) {
     humanService.saveHuman(human);
+    System.out.println();
     return human;
   }
 
